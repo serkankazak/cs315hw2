@@ -1,0 +1,13 @@
+Eager evaluation computes input as it comes,
+while lazy one waits until the end for processing all input.
+
+With eager one I process input when it arrives,
+and create another curry object with this processed value.
+
+With lazy one input stored and passed among objects,
+when object called, all input from beginning to end processed.
+
+Different behaviour of "sleepingAdd" function between examples is related with this difference.
+
+In lazy example, computation begins at the end so we see dots in the end,
+while in the eager one, as soon as input arrived it is processed and dots are printed.
